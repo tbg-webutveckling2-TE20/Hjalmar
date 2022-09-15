@@ -1,0 +1,59 @@
+@charset "UTF-8";
+body {
+    
+    background-image: url("/assets/Images/Space\ background.png");
+}
+
+header {
+    white-space: nowrap;
+    background-color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    width: min-content;
+    
+    margin: auto;
+}
+
+main {
+    background-color: midnightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    
+    
+
+}
+
+main section {
+    background-image: url(/assets/Icons/transparent-planet-icon-space-icon-planets-icon-5dcdda24b1b101.3313586015737718127278.png);
+    background-color: black;
+    justify-content: center;
+    height: 200px;
+    width: 350px;
+    border: 4px solid white;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+}
+
+main section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    transition: 0.4;
+}
+
+main section a:hover {
+    font-size: 110%;
+    background-color: aqua;
+    border-radius: 10px;
+}
