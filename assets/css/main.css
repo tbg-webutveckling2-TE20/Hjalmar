@@ -11,12 +11,14 @@ header {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     width: min-content;
-    
+    font-size: 150%;
     margin: auto;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 main {
-    background-color: midnightblue;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -31,7 +33,8 @@ main {
 }
 
 main section {
-    background-image: url(/assets/Icons/transparent-planet-icon-space-icon-planets-icon-5dcdda24b1b101.3313586015737718127278.png);
+
+    
     background-color: black;
     justify-content: center;
     height: 200px;
@@ -40,20 +43,87 @@ main section {
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
     margin: 20px;
+    overflow: hidden;
+    opacity: 1;
+    
 }
 
 main section a {
+    background-size: contain;
+    resize: both;
+    background-image: url(/assets/Icons/transparent-planet-icon-space-icon-planets-icon-5dcdda24b1b101.3313586015737718127278.png);
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     height: 100%;
     text-decoration: none;
     color: white;
-    transition: 0.4;
+    transition: 1.0s;
+    font-size: 150%;
+    font-weight: bold;
+    
 }
 
-main section a:hover {
-    font-size: 110%;
-    background-color: aqua;
+
+
+
+.upright a:hover{
+    resize: both;
+    transform: translate(10px, -10px);
+    transform: scale(4.0);
     border-radius: 10px;
+    background-image: url(/assets/Images/water-on-the-moon-min.png);
+    align-items: center;
+    font-size: 100%;
+
+}
+
+.upleft a:hover{
+    resize: both;
+    transform: translate(-10px, -10px);
+    transform: scale(4.0);
+    border-radius: 10px;
+    background-image: url(/assets/Images/water-on-the-moon-min.png);
+    align-items: center;
+    font-size: 100%;
+
+}
+
+.right a:hover{
+    resize: both;
+    transform: translateX(10px);
+    transform: scale(4.0);
+    border-radius: 10px;
+    background-image: url(/assets/Images/water-on-the-moon-min.png);
+    align-items: center;
+    font-size: 100%;
+}
+.left a:hover{
+    resize: both;
+    transform: translateX(-10px);
+    transform: scale(4.0);
+    border-radius: 10px;
+    background-image: url(/assets/Images/water-on-the-moon-min.png);
+    align-items: center;
+    font-size: 100%;
+}
+.downright a:hover{
+    resize: both;
+    transform: translate(50px, 50px);
+    transform: scale(4.0);
+    border-radius: 10px;
+    background-image: url(/assets/Images/water-on-the-moon-min.png);
+    align-items: center;
+    font-size: 100%;
+}
+.downleft a:hover{
+    resize: both;
+    transform: translate(-10px, 10px);
+    transform: scale(4.0);
+    border-radius: 10px;
+    background-image: url(/assets/Images/water-on-the-moon-min.png);
+    align-items: center;
+    font-size: 100%;
 }
