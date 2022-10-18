@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grunder 3</title>
+    </head>
+    <body>
+        <input type="number" id="input1">
+        <input type="number" id="input2">
+        <button id="button">Knapp</button>
+        <input type="number" id="input3">
+        
+    </body>
+    <script>
+     document.getElementById("button").addEventListener("click", button);
+    function button(){
+        
+        var x = document.getElementById("input1").valueAsNumber;
+        var y = document.getElementById("input2").valueAsNumber;
+        document.getElementById("input3").valueAsNumber = (x + y);
+        
+        
+        
+   
+} 
+
+        
+
+    </script>
+</html>
